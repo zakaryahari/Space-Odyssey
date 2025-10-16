@@ -1,0 +1,579 @@
+html,body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+/* this part is for the container */
+
+.container{
+    display: grid;
+    grid-template-areas: "header header"
+                            "content content"
+                            "footer footer";
+    grid-template-rows: 1fr;
+}
+
+/* this part is for the header */
+
+.header{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px;
+}
+.header-top{
+    background-color: black;
+    background-image: url(images/dark-sky-header-top.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.header-top img{
+    height: 80px;
+    padding-left: 90px;
+}
+.search-input{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    margin-right: 25px;
+}
+.header-top-right{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding-right: 100px;
+}
+.header-icons{
+    display: grid;
+    grid-template-columns: repeat(2 , 50px);
+    grid-template-rows: 40px;
+    align-items: center;
+}
+.header-icons img{
+    width: 35px;
+    height: 35px;
+}
+.language-selection select{
+    width: 150px;
+    height: 35px;
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.language-selection option{
+    color: rgb(0, 0, 0);
+}
+
+
+.header-bottom{
+    background-color: rgb(255, 254, 254); 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: center;
+    height: 80px;
+    box-shadow: 2px 2px 13px 5px #36363686;
+}
+.social-network{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+.header-menu{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 70px;
+}
+.header-menu a{
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: larger;
+}
+.header-menu-btn{
+    background-color: black;
+    padding: 15px 20px 15px 20px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: larger;
+}
+a.header-menu-btn{
+    color: #ffffff;
+}
+
+/* this part is for the content container  */
+
+          /* ----- Home page ----- */
+.content{
+    grid-area: content;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+}
+.slider{
+    background-image: url(images/slider.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 481px;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+.slider h1{
+    width: 400px;
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 2px 7px 5px black;
+}
+.slider p{
+    width: 800px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Poltawski Nowy';
+    font-size: 30px;
+}
+.slider-btn{
+    border: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #C0C0C0;
+}
+.Discover-cards{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    justify-content: space-around;  
+    justify-items: center; 
+    padding: 50px;
+    gap: 120px;
+}
+.cards{
+    background-image: url(images/discover-cards-bg.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 282px;
+    width: 326px;
+    background-color: black;
+    color: #C0C0C0;
+    padding: 25px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* border: none; */
+}
+.cards h1{
+    font-size: 20px;
+}
+.cards p {
+    font-size: 18px;
+    line-height: 1.3rem;
+}
+.cards button{
+    justify-self: end;
+    background-color: #C0C0C0;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 15px;  
+}
+.cards button:hover{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px #e6e6e6;
+}
+.Discover-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-left: 17%;
+    margin-right: 17%;
+    padding-bottom: 50px;
+}
+.Discover-content-time-card{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: black;
+    color: #ffffff;
+    padding: 15px 20px 15px 20px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 25px;
+}
+.Discover-content-description p{
+    font-size: 20px;
+    line-height: 1.9rem;
+}
+.Discover-content-time-card{
+    letter-spacing: 5px;
+}
+.time-card-title img{
+    width: 250px;
+}
+.Astronomy{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    background-color: black;
+    margin-left: 14%;
+    margin-right: 14%;
+    /* height: 420px; */
+    border-radius: 25px;
+    margin-bottom: 80px;
+}
+.Astronomy-img{
+    background-image: url(images/Astronomy-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    border-radius: 25px 0 0px 25px;
+}
+.Astronomy-content{
+    margin: 35px;
+    padding: 25px;
+    background-color: #999999;
+    border-radius: 15px;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.534)99,#999999);
+    color: #ffffff;
+    align-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.Astronomy-content h1{
+    font-size: 30px;
+    font-family: 'inter';
+}
+.Astronomy-content p{
+    font-size: 21px;
+    line-height: 1.3rem;
+    font-family: 'castoro';
+}
+.Astronomy-content button{
+    justify-self: end;
+    background-color: #e4e4e4;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 15px;  
+}
+.Astronomy-content button:hover{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px #e6e6e6;
+}
+
+.journale{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 150px;
+}
+.journale-img{
+    justify-items: start;
+    padding-left: 50px;
+}
+.journale-content{
+    padding: 25px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    font-family: 'Poltawski Nowy';
+}
+.journale-content p{
+    padding: 10px 25px 10px 25px;
+    
+    font-size: 18px;
+}
+.journale-content h1 ,.journale-content h2{
+    font-size: 36px;
+    line-height: 0.5rem;
+}
+.journale-content button{
+    margin-left: 20px;
+    justify-self: start;
+    padding: 10px 25px 10px 25px;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #99999900;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+.img-dots{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+}
+
+          /* ----- About Us page ----- */
+
+.about-description{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 14%;
+    margin-right: 14%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 13px 5px #36363686;
+    border-radius: 10px;
+}
+.about-description img{
+    border-radius: 20px;
+    margin: 10px;
+}
+.about-description-content{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    align-items: start;
+}
+.description-content-title {
+    align-self: start;
+    font-family: 'Orbitron';
+    margin: 0;
+    padding: 0;
+}
+
+.description-content-title p {
+    margin: 0;
+    padding: 10px;
+    line-height: 1;
+    font-size: 128px;
+    font-weight: 600;
+}
+
+.description-content-title hr {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.description-content-container-grid-1{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+}
+.content-container-grid p {
+    justify-content: start;
+}
+.content-container-grid p ,.Our-Community-grid p{
+    font-size: 36px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 800;
+}
+.description-content-container-grid-2{
+    padding: 0px 45px 0px 25px;
+    align-items: start;
+}
+.description-content-container-grid-2 p{
+    margin: 0;
+    font-family: 'Port Lligat Slab';
+    font-size: 34px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* .team-and-project{
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+} */
+
+.Our-Community {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; 
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.Our-Community-grid p {
+    font-size: 36px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 800;
+    margin: 0;
+}
+
+.team-cards ,.project-cards{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+.project-cards-list ,.team-cards-list{
+    justify-items: center;
+}
+.project-img{
+    justify-content: center;
+    justify-self: center;
+}
+.team-cards-list img{
+    border-radius: 25px;
+}
+.team-cards-list p ,.project-cards-list p{
+    text-align: center;
+    font-family: 'Port Lligat Slab';
+    font-size: 32px;
+    font-weight: 300;
+}
+.project-description{
+    width: 65%;
+}
+.project-description p{
+    font-family: 'Port Lligat Slab';
+    font-size: 16px;
+}
+.project-cards{
+    margin-bottom: 80px;
+}
+.Astronomy-Communities{
+    background-image: url(images/Astronomy-Communities.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+.Astronomy-Communities-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-items: center;
+    color: #ffffff;
+    margin-left: 14%;
+    margin-right: 14%;
+    gap: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.ASI-1{
+    margin-right: 100px;
+}
+.ASI-1 h1{
+    font-family: 'Poly';
+    font-size: 45px;
+    font-weight: 200;
+    font-style: oblique;
+}
+.ASI-2 ,.ASI-3{
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.ASI-H1{
+    font-size: 20px;
+}
+.ASI-p{
+    font-size: 35px;
+    line-height: 0;
+    font-weight: 600;
+}
+.ASI-3-content{
+    justify-items: center;
+    text-align: center;
+}
+
+
+
+
+/* the last part is the footer  */
+
+.footer{
+    grid-area: footer;
+    background-image: url(images/dark-sky-header-top.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 482px;
+}
+.footer hr{
+    width: 90%;
+}
+.footer-container{
+    background-color: #030303;
+    color: #ffffff;
+    height: 400px;
+    margin: 40px 95px 40px 95px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.footer-top{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    margin: 40px 55px 40px 55px;
+}
+.footer-top li{
+    list-style: none;
+}
+.footer-top a{
+    text-decoration: none;
+    font-size: larger;
+    color: #ffffff;
+    font-family: 'Abhaya Libre SemiBold';
+    line-height: 1.9rem;
+}
+.footer-cards h3{
+    font-size: x-large;
+}
+.footer-cards-input{
+    width: 300px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 10px 0px 10px 10px;
+}
+.footer-bottom{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    margin: 40px 55px 40px 55px;
+}
+.footer-copyrigthing{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    gap: 25px;
+    color: #ffffff;
+    align-items: center;
+}
+.footer-copyrigthing a{
+    text-decoration: none;
+    font-size: larger;
+    color: #ffffff;
+}
+.footer-social{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
