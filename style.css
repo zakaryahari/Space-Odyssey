@@ -936,3 +936,157 @@ img#bot-img{
     border-radius: 100%;
     margin: 5px;
 }
+
+
+/* Modile Responsive  */
+
+
+@media (max-width: 768px) {
+
+    /* General layout */
+    .container {
+        grid-template-areas:
+            "header"
+            "content"
+            "footer";
+    }
+
+    /* Header */
+    .header {
+        grid-template-rows: auto auto;
+    }
+
+    .header-top {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header-top img {
+        padding-left: 0;
+        height: 60px;
+    }
+
+    .header-top-right {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-right: 0;
+        justify-items: center;
+    }
+
+    .header-bottom {
+        grid-template-columns: 1fr;
+        height: auto;
+        box-shadow: none;
+        padding: 10px 0;
+    }
+
+    .header-menu {
+        grid-auto-flow: row;
+        gap: 25px;
+        padding: 0;
+    }
+
+    /* Slider */
+    .slider {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .slider h1 {
+        font-size: 28px;
+        width: auto;
+    }
+
+    .slider p {
+        font-size: 18px;
+        width: auto;
+    }
+
+    /* Cards Section */
+    .Discover-cards {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 40px;
+    }
+
+    .cards {
+        width: 90%;
+    }
+
+    /* Discover content */
+    .Discover-content {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    
+    .Astronomy {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .Astronomy-img {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    
+    .journale {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    /* About */
+    .about-description {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .team-cards,
+    .project-cards {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    /* Contact */
+    .contact-description {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        gap: 25px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-rows: auto;
+        margin: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px 0;
+    }
+}
