@@ -497,6 +497,111 @@ a.header-menu-btn{
     justify-items: center;
     text-align: center;
 }
+          /* ----- Missions page ----- */
+
+.banner{
+    background-image: url(images/starship_hero_d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+.banner-content{
+    background-color: #6262626c;
+    padding: 35px;
+    border-radius: 25px;
+}
+.banner-content h1{
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 2px 7px 5px black;
+    text-align: center;
+}
+.banner-content p{
+    width: 800px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Poltawski Nowy';
+    font-size: 30px;
+}
+.Missions-title{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-items: center;
+    column-gap: 10px;
+    align-items: center;
+}
+.Missions-title-icon{
+    justify-content: end;
+}
+.Missions-title-p{
+    justify-content: start;
+    font-size: 2rem;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 800; 
+}
+.Missions-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5 , 1fr);
+    justify-items: center;
+    gap: 80px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 150px;
+}
+.Missions-cards-iteam{
+    display: grid;
+    grid-template-columns: 470px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 5px #999999;
+    border-radius: 10px;
+}
+.Missions-card-img img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 434px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 27px;
+}
+.Missions-card-img{
+    margin-bottom: 0;
+}
+.Missions-card-content{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.Missions-card-content hr{
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+.Missions-card-content p{
+    padding: 20px;
+    margin: 0;
+}
+.Missions-card-content-title{
+    font-family: 'Orbitron';
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 0.2;
+}
+.Missions-card-content-description{
+    font-family: 'Port Lligat Slab';
+    font-size: 22px;
+    font-weight: 200;
+    align-content: end;
+}
+
 
 
           /* ----- Contact Us page ----- */
