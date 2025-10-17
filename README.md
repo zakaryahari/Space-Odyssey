@@ -76,15 +76,6 @@ Le **Product Owner** attend un site fluide, clair et harmonieux, prêt à être 
 
 ---
 
-## 🎨 Bonnes pratiques appliquées
-- Structure du code claire et indentée.
-- Classes et identifiants nommés de manière sémantique.  
-- Design **responsive** (mobile, tablette, desktop).  
-- Respect de la charte visuelle et de la hiérarchie typographique.
-- Utilisation de **box-shadow**, **hover effects**, et **transitions CSS** pour un rendu moderne.
-
----
-
 ## 💡 Auteur
 👨‍💻 **Zakarya Hari**  
 📧 [zakariahari42@gmail.com](mailto:zakariahari42@gmail.com)  
