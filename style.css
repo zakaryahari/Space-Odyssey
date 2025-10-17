@@ -931,3 +931,8 @@ img#bot-img{
     grid-template-columns: auto auto auto;
     align-items: center;
 }
+.footer-social img{
+    background-color: #535353;
+    border-radius: 100%;
+    margin: 5px;
+}
